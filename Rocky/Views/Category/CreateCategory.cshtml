@@ -7,5 +7,35 @@
                 Add Category
             </h2>
         </div>
+        <div class="form_fields">
+            <div class="row form-group fgr-field">
+                <div class="col-4">
+                    <label asp-for="name">Name</label>
+                </div>
+                <div class="col-8">
+                    <input type="text" asp-for="name"  class="form-control"/>
+                </div>
+            </div>
+            <div class="row form-group fgr-field">
+                <div class="col-4">
+                    <label asp-for="displayOrder">Display Order</label>
+                </div>
+                <div class="col-8">
+                    <input type="text" asp-for="displayOrder" class="form-control" />
+                </div>
+            </div>
+        </div>
+        <div class="form-footer">
+            <div class="form-group row">
+                <div class="col-8 offset-4 row">
+                    <div class="col pl-0">
+                        <input type="submit" name="create-category" class="btn btn-info w-100" value="Create" />
+                    </div>
+                    <div class="col">
+                        <a class="btn btn-primary" asp-action="Index">Back</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </form>

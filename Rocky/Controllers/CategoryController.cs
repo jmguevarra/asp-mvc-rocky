@@ -23,7 +23,7 @@ namespace Rocky.Controllers
             return View(objCategory);
         }
 
-
+        
         public IActionResult CreateCategory(){
             return View();
         }
